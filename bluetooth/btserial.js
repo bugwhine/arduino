@@ -10,6 +10,7 @@ btSerial.on('found', function(address, name) {
 			});
 
 			btSerial.on('data', function(buffer) {
+        console.log('Received: Size of data buf = ' + buffer.length);
 				console.log(buffer.toString('utf-8'));
 			});
 		}, function () {
